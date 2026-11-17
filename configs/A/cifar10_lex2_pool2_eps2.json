@@ -1,0 +1,45 @@
+{
+  "draft": "A",
+  "dataset": "cifar10",
+  "name": "lex2_pool2_eps2",
+  "model": {
+    "type": "pooled_cnn7",
+    "layout": "pool2",
+    "pool": "lex2"
+  },
+  "init": "ibp_shi",
+  "data": {
+    "batch_size": 128,
+    "augment": true,
+    "pad": 2,
+    "pad_mode": "replicate",
+    "norm": "cifar10",
+    "full_train": true
+  },
+  "train": {
+    "epochs": 160,
+    "lr": 0.0005,
+    "weight_decay": 0.0,
+    "scheduler": "multistep",
+    "milestones": [
+      0.75,
+      0.875
+    ],
+    "gamma": 0.2,
+    "grad_clip": 10.0,
+    "ibp": true,
+    "eps": 0.00784313725490196,
+    "warmup_epochs": 1,
+    "ramp_epochs": 80,
+    "kappa_end": 0.0,
+    "eps_schedule": "smoothed",
+    "margin": true,
+    "reg_lambda": 0.5,
+    "reg_tol": 0.5,
+    "select": "last"
+  },
+  "eps_eval": [
+    0.0,
+    0.00784313725490196
+  ]
+}

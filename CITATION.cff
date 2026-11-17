@@ -1,0 +1,74 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Admissible-Pooling: Interval Max-Pooling with Admissible Orders for Certified Robustness"
+version: "1.0.0"
+date-released: "2026-11-17"
+license: MIT
+repository-code: "https://github.com/MohammadMahdi-Sharifbeigy/admissible-pooling"
+url: "https://github.com/MohammadMahdi-Sharifbeigy/admissible-pooling"
+abstract: >
+  Code accompanying the paper "Which Admissible Orders Make Interval Max-Pooling
+  Inclusion-Preserving? A Characterization for Interval-Valued Convolutional Networks"
+  (submitted to Fuzzy Sets and Systems). The repository provides a PyTorch implementation
+  of sound and unsound interval max-pooling operators (Lattice, Lex2, Lex1, Xu–Yager)
+  together with certified-training pipelines for CNN and GNN benchmarks.
+authors:
+  - family-names: "Dehghan Nezhad"
+    given-names: "Akbar"
+    affiliation: "Iran University of Science and Technology"
+    orcid: "https://orcid.org/0000-0003-4200-6892"
+    email: "dehghannezhad@iust.ac.ir"
+  - family-names: "Sharifbeygi"
+    given-names: "Mohammadmahdi"
+    affiliation: "Iran University of Science and Technology"
+    orcid: "https://orcid.org/0009-0000-5113-8374"
+    email: "sharif_mohammad@mathdep.iust.ac.ir"
+keywords:
+  - admissible order
+  - interval arithmetic
+  - max-pooling
+  - certified robustness
+  - interval bound propagation
+  - convolutional neural network
+  - fuzzy sets
+  - interval-valued fuzzy sets
+  - graph neural network
+preferred-citation:
+  type: article
+  title: >
+    Which Admissible Orders Make Interval Max-Pooling Inclusion-Preserving?
+    A Characterization for Interval-Valued Convolutional Networks
+  authors:
+    - family-names: "Dehghan Nezhad"
+      given-names: "Akbar"
+      orcid: "https://orcid.org/0000-0003-4200-6892"
+    - family-names: "SharifBeygi"
+      given-names: "Mohammadmahdi"
+      orcid: "https://orcid.org/0009-0000-5113-8374"
+  journal: "Fuzzy Sets and Systems"
+  year: 2026
+references:
+  - type: article
+    title: "Scalable Verified Training for Provably Robust Image Classification"
+    authors:
+      - family-names: "Gowal"
+        given-names: "Sven"
+      - family-names: "Dvijotham"
+        given-names: "Krishnamurthy"
+    year: 2019
+    notes: "arXiv:1810.12715"
+  - type: article
+    title: "Fast Certified Robust Training with Short Warmup"
+    authors:
+      - family-names: "Shi"
+        given-names: "Zhouxing"
+    year: 2021
+    notes: "arXiv:2103.17268"
+  - type: article
+    title: "Generation of linear orders for intervals by means of aggregation functions"
+    authors:
+      - family-names: "Bustince"
+        given-names: "Humberto"
+    journal: "Fuzzy Sets and Systems"
+    volume: 220
+    year: 2013

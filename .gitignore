@@ -1,0 +1,49 @@
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+*.whl
+.venv/
+venv/
+env/
+.env
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── PyTorch checkpoints & model weights ──────────────────────────────────────
+*.pt
+*.pth
+CIFAR/
+Fashion-MNIST/
+data/
+
+# ── Experiment outputs (logs, metrics, results) ───────────────────────────────
+runs/
+
+# ── LaTeX build artefacts ─────────────────────────────────────────────────────
+doc/*.aux
+doc/*.bbl
+doc/*.blg
+doc/*.fdb_latexmk
+doc/*.fls
+doc/*.log
+doc/*.out
+doc/*.spl
+doc/*.synctex.gz
+doc/*.toc
+
+# ── OS / IDE ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~

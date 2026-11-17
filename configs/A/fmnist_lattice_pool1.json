@@ -1,0 +1,38 @@
+{
+  "draft": "A",
+  "dataset": "fmnist",
+  "name": "lattice_pool1",
+  "model": {
+    "type": "pooled_cnn7",
+    "layout": "pool1",
+    "pool": "lattice"
+  },
+  "init": "ibp",
+  "data": {
+    "batch_size": 256,
+    "augment": false
+  },
+  "train": {
+    "epochs": 100,
+    "lr": 0.0005,
+    "weight_decay": 0.0,
+    "scheduler": "multistep",
+    "milestones": [
+      0.75,
+      0.875
+    ],
+    "gamma": 0.2,
+    "grad_clip": 10.0,
+    "ibp": true,
+    "eps": 0.1,
+    "warmup_epochs": 1,
+    "ramp_epochs": 40,
+    "kappa_end": 0.5
+  },
+  "eps_eval": [
+    0.0,
+    0.025,
+    0.05,
+    0.1
+  ]
+}

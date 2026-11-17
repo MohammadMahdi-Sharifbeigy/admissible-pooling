@@ -1,0 +1,43 @@
+{
+  "draft": "A",
+  "dataset": "mnist",
+  "name": "lex2_pool2_eps01",
+  "model": {
+    "type": "pooled_cnn7",
+    "layout": "pool2",
+    "pool": "lex2"
+  },
+  "init": "ibp_shi",
+  "data": {
+    "batch_size": 256,
+    "augment": false,
+    "norm": "none",
+    "full_train": true
+  },
+  "train": {
+    "epochs": 70,
+    "lr": 0.0005,
+    "weight_decay": 0.0,
+    "scheduler": "multistep",
+    "milestones": [
+      0.7142857142857143,
+      0.8571428571428571
+    ],
+    "gamma": 0.2,
+    "grad_clip": 10.0,
+    "ibp": true,
+    "eps": 0.1,
+    "warmup_epochs": 0,
+    "ramp_epochs": 20,
+    "kappa_end": 0.0,
+    "eps_schedule": "smoothed",
+    "margin": true,
+    "reg_lambda": 0.5,
+    "reg_tol": 0.5,
+    "select": "last"
+  },
+  "eps_eval": [
+    0.0,
+    0.1
+  ]
+}
